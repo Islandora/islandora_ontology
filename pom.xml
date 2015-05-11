@@ -24,7 +24,21 @@
               <transformationSet>
                 <dir>.</dir>
                 <includes>
-                  <include>islandora.rdf</include>
+                  <include>relsext.rdf</include>
+                </includes>
+                <stylesheet>owl2html.xsl</stylesheet>
+                <outputDir>${project.build.directory}/html</outputDir>
+                <fileMappers>
+                  <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.RegExpFileMapper">
+                    <pattern>\.rdf$</pattern>
+                    <replacement>/index.html</replacement>
+                  </fileMapper>
+                </fileMappers>
+              </transformationSet>
+              <transformationSet>
+                <dir>.</dir>
+                <includes>
+                  <include>relsint.rdf</include>
                 </includes>
                 <stylesheet>owl2html.xsl</stylesheet>
                 <outputDir>${project.build.directory}/html</outputDir>
