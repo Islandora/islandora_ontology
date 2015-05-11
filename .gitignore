@@ -1,0 +1,6 @@
+# ignore protege work files
+catalog-v001.xml
+# ignore Mac OS Finder files
+.DS_Store
+target
+*~

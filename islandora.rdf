@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="owl2html.xsl"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+]>
+<rdf:RDF xmlns="http://islandora.ca/definitions/v2/#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://islandora.ca/definitions/v2/">
+  <owl:Ontology rdf:about="http://islandora.ca/definitions/v2/#">
+    <rdfs:label xml:lang="en">Islandora Ontology</rdfs:label>
+    <rdfs:comment xml:lang="en">Ontology for the Islandora data model, intended primarily to make it possible to expose Islandora-curated RDF predicates via de-reference-able URIs.</rdfs:comment>
+  </owl:Ontology>
+  
+  <!-- http://islandora.ca/definitions/v2/#isPageOf -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isPageOf">
+    <rdfs:label xml:lang="en">is page of</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isSequenceNumber -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isSequenceNumber">
+    <rdfs:label xml:lang="en">is sequence number</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isPageNumber -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isPageNumber">
+    <rdfs:label xml:lang="en">is page number</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isSection -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isSection">
+    <rdfs:label xml:lang="en">is section</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#targetedBy -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#targetBy">
+    <rdfs:label xml:lang="en">targeted by</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#targets -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#targets">
+    <rdfs:label xml:lang="en">targets</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#hasColor -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#hasColor">
+    <rdfs:label xml:lang="en">has color</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#hasURN -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#hasURN">
+    <rdfs:label xml:lang="en">has URN</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isEntity -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isEntity">
+    <rdfs:label xml:lang="en">is entity</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isAnnotationType -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isAnnotationType">
+    <rdfs:label xml:lang="en">is annotation type</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#hasLanguage -->
+  <!-- Should sameAs this to dcterms:lanaguage -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#hasLanguage">
+    <rdfs:label xml:lang="en">has language</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#generate_ocr -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#generate_ocr">
+    <rdfs:label xml:lang="en">generate ocr</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#dateIssued -->
+  <!-- Should sameAs this to something -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#dateIssued">
+    <rdfs:label xml:lang="en">date issued</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isViewableByRole -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isViewableByRole">
+    <rdfs:label xml:lang="en">is viewable by role</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isManageableByRole -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isManageableByRole">
+    <rdfs:label xml:lang="en">is manageable by role</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isViewableByUser -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isViewableByUser">
+    <rdfs:label xml:lang="en">is viewable by user</rdfs:label>
+  </owl:ObjectProperty>
+
+  <!-- http://islandora.ca/definitions/v2/#isManageableByUser -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isManageableByUser">
+    <rdfs:label xml:lang="en">is manageable by user</rdfs:label>
+  </owl:ObjectProperty>
+  
+  <!-- http://islandora.ca/definitions/v2/#isSequenceNumberOf$escaped_pid -->
+  <owl:ObjectProperty rdf:about="http://islandora.ca/definitions/v2/#isSequenceNumberOf$escaped_pid">
+    <rdfs:label xml:lang="en">is sequence number of escaped PID</rdfs:label>
+  </owl:ObjectProperty>
+</rdf:RDF>
