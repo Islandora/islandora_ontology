@@ -26,7 +26,7 @@
                 <includes>
                   <include>relsext.rdf</include>
                 </includes>
-                <stylesheet>owl2html.xsl</stylesheet>
+                <stylesheet>rdfs2html.xsl</stylesheet>
                 <outputDir>${project.build.directory}/html</outputDir>
                 <fileMappers>
                   <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.RegExpFileMapper">
@@ -40,7 +40,7 @@
                 <includes>
                   <include>relsint.rdf</include>
                 </includes>
-                <stylesheet>owl2html.xsl</stylesheet>
+                <stylesheet>rdfs2html.xsl</stylesheet>
                 <outputDir>${project.build.directory}/html</outputDir>
                 <fileMappers>
                   <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.RegExpFileMapper">
