@@ -29,6 +29,7 @@
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#height">
     <rdfs:label xml:lang="en">height</rdfs:label>
     <rdfs:comment xml:lang="en">The height of an image</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
     <skos:exactMatch rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#height" />
   </rdf:Property>
   
@@ -36,6 +37,7 @@
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#width">
     <rdfs:label xml:lang="en">width</rdfs:label>
     <rdfs:comment xml:lang="en">The width of an image</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
     <skos:exactMatch rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#width" />
   </rdf:Property>
 </rdf:RDF>

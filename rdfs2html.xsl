@@ -154,7 +154,7 @@
         <xsl:if test="skos:closeMatch/@rdf:resource">
           <xsl:call-template name="display-uri">
             <xsl:with-param name="label">Close match</xsl:with-param>
-            <xsl:with-param name="uri" select="skos:closeMatch/@rdf:resource"/>
+            <xsl:with-param name="uri" select="skos:exactMatch/@rdf:resource"/>
           </xsl:call-template>
         </xsl:if>
       </ul>
