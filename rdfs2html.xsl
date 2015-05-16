@@ -140,22 +140,13 @@
           </xsl:call-template>
         </xsl:if>
         <xsl:if test="rdfs:range/@rdf:resource">
-          <xsl:call-template name="display-uri">
-            <xsl:with-param name="label">Range</xsl:with-param>
-            <xsl:with-param name="uri" select="rdfs:range/@rdf:resource"/>
-          </xsl:call-template>
+          <li>Range: <a href="{rdfs:range/@rdf:resource}">xsd:<xsl:value-of select="substring-after(rdfs:range/@rdf:resource,'#')"/></a></li>
         </xsl:if>
         <xsl:if test="skos:exactMatch/@rdf:resource">
-          <xsl:call-template name="display-uri">
-            <xsl:with-param name="label">Exact match</xsl:with-param>
-            <xsl:with-param name="uri" select="skos:exactMatch/@rdf:resource"/>
-          </xsl:call-template>
+          <li>Exact match: <a href="{skos:exactMatch/@rdf:resource}"><xsl:value-of select="skos:exactMatch/@rdf:resource"/></a></li>
         </xsl:if>
         <xsl:if test="skos:closeMatch/@rdf:resource">
-          <xsl:call-template name="display-uri">
-            <xsl:with-param name="label">Close match</xsl:with-param>
-            <xsl:with-param name="uri" select="skos:exactMatch/@rdf:resource"/>
-          </xsl:call-template>
+          <li>Close match: <a href="{skos:closeMatch/@rdf:resource}"><xsl:value-of select="skos:closeMatch/@rdf:resource"/></a></li>
         </xsl:if>
       </ul>
     </xsl:if>
