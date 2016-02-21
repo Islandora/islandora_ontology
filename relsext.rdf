@@ -67,6 +67,11 @@
     <rdfs:label xml:lang="en">has URN</rdfs:label>
   </rdf:Property>
   
+  <!-- http://islandora.ca/ontology/relsext#inheritXacmlFrom -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#inheritXacmlFrom">
+    <rdfs:label xml:lang="en">inherit XACML from</rdfs:label>
+  </rdf:Property>
+
   <!-- http://islandora.ca/ontology/relsext#isEntity -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isEntity">
     <rdfs:label xml:lang="en">is entity</rdfs:label>
@@ -75,6 +80,11 @@
   <!-- http://islandora.ca/ontology/relsext#isAnnotationType -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isAnnotationType">
     <rdfs:label xml:lang="en">is annotation type</rdfs:label>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#hasPageProgression -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#hasPageProgression">
+    <rdfs:label xml:lang="en">has Page Progregression</rdfs:label>
   </rdf:Property>
   
   <!-- http://islandora.ca/ontology/relsext#hasLanguage -->
@@ -86,6 +96,38 @@
   <!-- http://islandora.ca/ontology/relsext#generate_ocr -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#generate_ocr">
     <rdfs:label xml:lang="en">generate ocr</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#email-admin-when-ingested -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#email-admin-when-ingested">
+    <rdfs:label xml:lang="en">email admin when ingested</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#book-batched -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#book-batched">
+    <rdfs:label xml:lang="en">book batched</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#newspaper-batched -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#newspaper-batched">
+    <rdfs:label xml:lang="en">newspaper-batched</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+  
+  <!-- http://islandora.ca/ontology/relsext#width -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#width">
+    <rdfs:label xml:lang="en">width</rdfs:label>
+    <rdfs:comment xml:lang="en">The width of an image</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    <skos:exactMatch rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#width" />
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#create_pdf -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#create_pdf">
+    <rdfs:label xml:lang="en">create pdf</rdfs:label>
     <rdfs:range rdf:resource="&xsd;boolean"/>
   </rdf:Property>
   
