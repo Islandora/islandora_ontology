@@ -22,7 +22,7 @@
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-11</dcterms:modified>
     <dcterms:publisher rdf:resource="http://islandora.ca/"/>
     <rdfs:comment xml:lang="en">Ontology for the Islandora RELS-EXT data model, intended primarily to make it possible to expose Islandora-curated RDF predicates via de-reference-able URIs.</rdfs:comment>
-    <owl:versionInfo>v1/2015/05/11</owl:versionInfo>
+    <owl:versionInfo>v1/2016/02/22</owl:versionInfo>
   </rdf:Description>
   
   <!-- http://islandora.ca/ontology/relsext#isPageOf -->
