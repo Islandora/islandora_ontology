@@ -34,12 +34,14 @@
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isSequenceNumber">
     <rdfs:label xml:lang="en">is sequence number</rdfs:label>
     <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    <rdfs:comment xml:lang="en">The numerical position of this page within its host or parent object.</rdfs:comment>
   </rdf:Property>
   
   <!-- http://islandora.ca/ontology/relsext#isPageNumber -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isPageNumber">
     <rdfs:label xml:lang="en">is page number</rdfs:label>
-    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+    <rdfs:comment xml:lang="en">The string identifier of this page within its host or parent object.</rdfs:comment>
   </rdf:Property>
   
   <!-- http://islandora.ca/ontology/relsext#isSection -->
