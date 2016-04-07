@@ -84,7 +84,7 @@
 
   <!-- http://islandora.ca/ontology/relsext#hasPageProgression -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#hasPageProgression">
-    <rdfs:label xml:lang="en">has Page Progregression</rdfs:label>
+    <rdfs:label xml:lang="en">has Page Progression</rdfs:label>
   </rdf:Property>
   
   <!-- http://islandora.ca/ontology/relsext#hasLanguage -->
