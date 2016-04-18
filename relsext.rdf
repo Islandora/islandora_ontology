@@ -22,7 +22,7 @@
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-11</dcterms:modified>
     <dcterms:publisher rdf:resource="http://islandora.ca/"/>
     <rdfs:comment xml:lang="en">Ontology for the Islandora RELS-EXT data model, intended primarily to make it possible to expose Islandora-curated RDF predicates via de-reference-able URIs.</rdfs:comment>
-    <owl:versionInfo>v1/2015/05/11</owl:versionInfo>
+    <owl:versionInfo>v1/2016/02/22</owl:versionInfo>
   </rdf:Description>
   
   <!-- http://islandora.ca/ontology/relsext#isPageOf -->
@@ -34,12 +34,14 @@
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isSequenceNumber">
     <rdfs:label xml:lang="en">is sequence number</rdfs:label>
     <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    <rdfs:comment xml:lang="en">The numerical position of this page within its host or parent object.</rdfs:comment>
   </rdf:Property>
   
   <!-- http://islandora.ca/ontology/relsext#isPageNumber -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isPageNumber">
     <rdfs:label xml:lang="en">is page number</rdfs:label>
-    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+    <rdfs:comment xml:lang="en">The string identifier of this page within its host or parent object.</rdfs:comment>
   </rdf:Property>
   
   <!-- http://islandora.ca/ontology/relsext#isSection -->
@@ -67,6 +69,11 @@
     <rdfs:label xml:lang="en">has URN</rdfs:label>
   </rdf:Property>
   
+  <!-- http://islandora.ca/ontology/relsext#inheritXacmlFrom -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#inheritXacmlFrom">
+    <rdfs:label xml:lang="en">inherit XACML from</rdfs:label>
+  </rdf:Property>
+
   <!-- http://islandora.ca/ontology/relsext#isEntity -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isEntity">
     <rdfs:label xml:lang="en">is entity</rdfs:label>
@@ -75,6 +82,11 @@
   <!-- http://islandora.ca/ontology/relsext#isAnnotationType -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isAnnotationType">
     <rdfs:label xml:lang="en">is annotation type</rdfs:label>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#hasPageProgression -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#hasPageProgression">
+    <rdfs:label xml:lang="en">has Page Progression</rdfs:label>
   </rdf:Property>
   
   <!-- http://islandora.ca/ontology/relsext#hasLanguage -->
@@ -86,6 +98,38 @@
   <!-- http://islandora.ca/ontology/relsext#generate_ocr -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#generate_ocr">
     <rdfs:label xml:lang="en">generate ocr</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#email-admin-when-ingested -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#email-admin-when-ingested">
+    <rdfs:label xml:lang="en">email admin when ingested</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#book-batched -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#book-batched">
+    <rdfs:label xml:lang="en">book batched</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#newspaper-batched -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#newspaper-batched">
+    <rdfs:label xml:lang="en">newspaper-batched</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+  
+  <!-- http://islandora.ca/ontology/relsext#width -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#width">
+    <rdfs:label xml:lang="en">width</rdfs:label>
+    <rdfs:comment xml:lang="en">The width of an image</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    <skos:exactMatch rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#width" />
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#create_pdf -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#create_pdf">
+    <rdfs:label xml:lang="en">create pdf</rdfs:label>
     <rdfs:range rdf:resource="&xsd;boolean"/>
   </rdf:Property>
   
