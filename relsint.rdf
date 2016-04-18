@@ -22,22 +22,47 @@
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-11</dcterms:modified>
     <dcterms:publisher rdf:resource="http://islandora.ca/"/>
     <rdfs:comment xml:lang="en">Ontology for the Islandora RELS-INT data model, intended primarily to make it possible to expose Islandora-curated RDF predicates via de-reference-able URIs.</rdfs:comment>
-    <owl:versionInfo>v1/2015/05/11</owl:versionInfo>
+    <owl:versionInfo>v1/2016/02/22</owl:versionInfo>
   </rdf:Description>
   
-  <!-- http://islandora.ca/ontology/relsint#height -->
-  <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#height">
-    <rdfs:label xml:lang="en">height</rdfs:label>
+  <!-- http://islandora.ca/ontology/relsint#height_literal -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#height_literal">
+    <rdfs:label xml:lang="en">height literal</rdfs:label>
     <rdfs:comment xml:lang="en">The height of an image</rdfs:comment>
     <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
     <skos:exactMatch rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#height" />
   </rdf:Property>
   
-  <!-- http://islandora.ca/ontology/relsint#width -->
-  <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#width">
+  <!-- http://islandora.ca/ontology/relsint#width_literal -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#width_literal">
     <rdfs:label xml:lang="en">width</rdfs:label>
     <rdfs:comment xml:lang="en">The width of an image</rdfs:comment>
     <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
     <skos:exactMatch rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#width" />
   </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsintt#isViewableByRole -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#isViewableByRole">
+    <rdfs:label xml:lang="en">is viewable by role</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsint#isManageableByRole -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#isManageableByRole">
+    <rdfs:label xml:lang="en">is manageable by role</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsint#isViewableByUser -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#isViewableByUser">
+    <rdfs:label xml:lang="en">is viewable by user</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsint#isManageableByUser -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsint#isManageableByUser">
+    <rdfs:label xml:lang="en">is manageable by user</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </rdf:Property>
+
 </rdf:RDF>
