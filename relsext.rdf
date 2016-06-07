@@ -168,4 +168,19 @@
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isSequenceNumberOf$escaped_pid">
     <rdfs:label xml:lang="en">is sequence number of escaped PID</rdfs:label>
   </rdf:Property>
+
+  <!-- info:islandora/islandora-system:def/scholar#embargo-until -->
+  <rdf:Property rdf:about="info:islandora/islandora-system:def/scholar#embargo-until">
+    <rdfs:label xml:lang="en">embargo until</rdfs:label>
+    <rdfs:comment xml:lang="en">The date of an embargo's expiration (or the string 'indefinite' for permanent embargoes)</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;string"/>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </rdf:Property>
+
+  <!-- info:islandora/islandora-system:def/scholar#embargo-expiry-notification-date -->
+  <rdf:Property rdf:about="info:islandora/islandora-system:def/scholar#embargo-expiry-notification-date">
+    <rdfs:label xml:lang="en">embargo expiration notification date</rdfs:label>
+    <rdfs:comment xml:lang="en">The date 10 days prior to the expiration of an embargo when users should be notified</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;dateTime"/>
+  </rdf:Property>
 </rdf:RDF>
