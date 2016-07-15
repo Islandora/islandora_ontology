@@ -168,4 +168,11 @@
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#isSequenceNumberOf$escaped_pid">
     <rdfs:label xml:lang="en">is sequence number of escaped PID</rdfs:label>
   </rdf:Property>
+
+  <!-- http://islandora.ca/ontology/relsext#deferDerivatives -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#deferDerivatives">
+    <rdfs:label xml:lang="en">defer derivatives</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>
+
 </rdf:RDF>
