@@ -21,7 +21,7 @@ Should there be discrepancy between the ontology as published and the codebase, 
 
 In addition, during each release cycle, an audit of the ontology is done to identify discrepancies between the existing code base, and published ontology.
 
-## Maintaner(s)
+## Maintainer(s)
 
 * [Nick Ruest](https://github.com/ruebot)
 
