@@ -172,7 +172,7 @@
   <!-- http://islandora.ca/ontology/relsext#deferDerivatives -->
   <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#deferDerivatives">
     <rdfs:label xml:lang="en">defer derivatives</rdfs:label>
-    <rdfs:comment xml:lang="en">Boolean value of defer derivatives option.</rdfs:comment>
+    <rdfs:comment xml:lang="en">Prevent derivatives from running during ingest</rdfs:comment>
     <rdfs:range rdf:resource="&xsd;boolean"/>
   </rdf:Property>
 
