@@ -16,7 +16,7 @@
   <xsl:variable name="publisher" select="/rdf:RDF/rdf:Description[1]/dcterms:publisher/@rdf:resource"/>
   <xsl:variable name="seeAlso" select="/rdf:RDF/rdf:Description[1]/rdfs:seeAlso/@rdf:resource"/>
   <xsl:variable name="versionInfo" select="/rdf:RDF/rdf:Description/owl:versionInfo"/>
-  <xsl:template match="/">
+  <xsl:template match="/rdf:RDF">
     <html>
       <head>
         <title>
