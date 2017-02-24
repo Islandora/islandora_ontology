@@ -23,7 +23,7 @@ In addition, during each release cycle, an audit of the ontology is done to iden
 
 ## Maintainer(s)
 
-* Chris Stanton](https://github.com/ChrisStanton)
+* [Chris Stanton](https://github.com/ChrisStanton)
 
 ## License
 
