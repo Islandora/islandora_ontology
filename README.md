@@ -23,7 +23,7 @@ In addition, during each release cycle, an audit of the ontology is done to iden
 
 ## Maintainer(s)
 
-* [Nick Ruest](https://github.com/ruebot)
+* [Chris Stanton](https://github.com/ChrisStanton)
 
 ## License
 
