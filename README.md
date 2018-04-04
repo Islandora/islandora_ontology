@@ -23,7 +23,7 @@ In addition, during each release cycle, an audit of the ontology is done to iden
 
 ## Maintainer(s)
 
-* [Danny Lamb](https://github.com/dannylamb)
+* [Kim Pham](https://github.com/kimpham54)
 
 ## License
 
