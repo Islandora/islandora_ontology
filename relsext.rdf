@@ -173,5 +173,20 @@
     <rdfs:comment xml:lang="en">Prevent derivatives from running during ingest</rdfs:comment>
     <rdfs:range rdf:resource="&xsd;boolean"/>
   </rdf:Property>
-
+    
+  <!-- http://islandora.ca/ontology/relsext#hasCover -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#hasCover">
+    <rdfs:label xml:lang="en">has cover</rdfs:label>
+    <rdfs:comment xml:lang="en">If the book Object has or not a cover or first recto</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;boolean"/>
+  </rdf:Property>  
+  
+  <!-- http://islandora.ca/ontology/relsext#viewingHint -->
+  <rdf:Property rdf:about="http://islandora.ca/ontology/relsext#viewingHint">
+    <rdfs:label xml:lang="en">Method or hint of displaying a paged resource</rdfs:label>
+    <rdfs:comment xml:lang="en">Can be either 'paged' or 'individual'</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://iiif.io/api/presentation/2.1/#viewinghint"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </rdf:Property>  
+    
 </rdf:RDF>
