@@ -17,7 +17,7 @@ $ mvn xml:transform
 
 ## Contributing
 
-Should there be discrepancy between the ontology as published and the codebase, please create a JIRA ticket as outlined in the [CONTRIBUTING.md](https://github.com/Islandora-Labs/islandora_ontology/blob/master/CONTRIBUTING.md#report-a-bug).
+Should there be discrepancy between the ontology as published and the codebase, please create a JIRA ticket as outlined in the [CONTRIBUTING.md](https://github.com/Islandora-Labs/islandora_ontology/blob/main/CONTRIBUTING.md#report-a-bug).
 
 In addition, during each release cycle, an audit of the ontology is done to identify discrepancies between the existing code base, and published ontology.
 
